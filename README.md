@@ -20,17 +20,16 @@
 	+ file_excel_here:
 			file_push_name.xlsx : chứa file dữ liệu cần đưa lên trang web.
 	+ log:
-			log_thanhcong : chứa dòng dữ liệu đúng.
-			log_thatbai	: chứa các dòng dữ liệu bị sai khi ngoại lệ xử lý được.
-			logfile_error : chứa các dòng dữ liệu bị sai khi ngoại lệ không xử lý được.
+			+ log/log_thanhcong : chứa dòng dữ liệu đúng.
+			+ log/log_thatbai	: chứa các dòng dữ liệu bị sai khi ngoại lệ xử lý được.
+			+ log/logfile_error : chứa các dòng dữ liệu bị sai khi ngoại lệ không xử lý được.
 	+ src:
-			setting:
-					geckodriver.log : file log khi cài đặt driver browser.
-					pythonsetup.exe	: Gói cài đặt python 3.7.4
-					requirements.txt : Chứa các thư mục cần install
-			account_push.txt
-			chromedriver.exe
-			SQL_server_connection.txt
+		+ src/geckodriver.log : file log khi cài đặt driver browser.
+		+ src/pythonsetup.exe	: Gói cài đặt python 3.7.4
+		+ src/requirements.txt : Chứa các thư mục cần install
+		+ src/account_push.txt
+		+ src/chromedriver.exe
+		+ src/SQL_server_connection.txt
 	+ excel_to_list_data.py
 	+ push.bat
 *Library:
