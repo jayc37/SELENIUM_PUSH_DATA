@@ -6,6 +6,7 @@
 
 ----------------------------------------
 # Sử dụng chủ yếu cho mục đích đẩy dữ liệu từ excel lên trang web cá nhân.
+
 - Ở đây mình sử dụng database là sql server để lưu trữ các account đăng nhập. Các bạn có thể chỉnh sữa lại chúng ở phía dưới hàm main.
 
 - Một số chỉ dẫn cơ bản:
@@ -16,8 +17,10 @@
 	- dòng 4: password để đăng nhập đến sql
 - bước 2: chạy file push.bat
 ----------------------------------------
-
+----------------------------------------
 # Sơ đồ thư mục:
+
+
 - **SELENIUM_PUSH_DATA**:
 	- *error_file*:
 	   - *error.xlsx* : chứa các dòng dữ liệu bị sai hoặc không đưa lên được đến trang web.
@@ -36,7 +39,9 @@
 	  - src/*SQL_server_connection.txt*
   - *excel_to_list_data.py*
   - *push.bat*
+  ----------------------------------------
 **Library**: *Bs4,Selenium,Openpyxl,Re,String,Os,Socket,Sys,Codecs,Pyodbc,Logging,Argparse,Threading,Time,Random*
+----------------------------------------
 - **Bs4**: BeautifulSoup crawl dữ liệu về.
 - **Selenium**: webdriver,Keys,By,Options,TimeoutException,WebDriverWait,ActionChains:	Tạo bot.
 	- **webdriver**: Tạo một browser mới mỗi lần khởi động bot.
@@ -70,5 +75,4 @@
 	- Đợi trang load.
 - **Random**: 
 	- Randint trong randoms, kết hợp với sleep trong time, tạo khoảng ngủ mô phỏng thời gian chờ như người thật.
-
-------------------
+----------------------------------------
