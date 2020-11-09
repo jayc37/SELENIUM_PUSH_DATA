@@ -37,8 +37,8 @@
 	  - src/*account_push.txt*
 	  - src/*chromedriver.exe*
 	  - src/*SQL_server_connection.txt*
-  - *excel_to_list_data.py*
-  - *push.bat*
+  - *excel_to_list_data.py* : file source code.
+  - *push.bat*: file batch khởi tạo chương trình.
   ----------------------------------------
 **Library**: *Bs4,Selenium,Openpyxl,Re,String,Os,Socket,Sys,Codecs,Pyodbc,Logging,Argparse,Threading,Time,Random*
 
