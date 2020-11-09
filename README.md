@@ -11,8 +11,28 @@
 	dòng 3: user name để đăng nhập đến sql
 	dòng 4: password để đăng nhập đến sql
 - bước 2: chạy file push.bat
-
 ----------------------------------------
+
+#Sơ đồ thư mục:
+- SELENIUM_PUSH_DATA:
+	+ error_file:
+			error.xlsx : chứa các dòng dữ liệu bị sai hoặc không đưa lên được đến trang web.
+	+ file_excel_here:
+			file_push_name.xlsx : chứa file dữ liệu cần đưa lên trang web.
+	+ log:
+			log_thanhcong : chứa dòng dữ liệu đúng.
+			log_thatbai	: chứa các dòng dữ liệu bị sai khi ngoại lệ xử lý được.
+			logfile_error : chứa các dòng dữ liệu bị sai khi ngoại lệ không xử lý được.
+	+ src:
+			setting:
+					geckodriver.log : file log khi cài đặt driver browser.
+					pythonsetup.exe	: Gói cài đặt python 3.7.4
+					requirements.txt : Chứa các thư mục cần install
+			account_push.txt
+			chromedriver.exe
+			SQL_server_connection.txt
+	+ excel_to_list_data.py
+	+ push.bat
 *Library:
 - Bs4: BeautifulSoup crawl dữ liệu về.
 - Selenium: webdriver,Keys,By,Options,TimeoutException,WebDriverWait,ActionChains:	Tạo bot.
@@ -32,7 +52,8 @@
 - Os,Socket:
 	os: Sử dụng để truy xuất lấy ra folder nguồn trên máy tính. (folder download file)
 	socket: bắt lỗi socket.error.
-- Sys
+- Sys: Dung ossys kill chrome.
+	Kill browser hiện tại để khởi tạo lại browser mới khi trang bị đứng.
 - Codecs
 - Pyodbc: Kết nối python với SQL Server. Tạo truy vấn từ bề mặt py đến MSSQL.
 - Logging: Log lỗi, log log.
@@ -42,3 +63,4 @@
 - Time: sử dụng sleep để khiến process sleeping, mục đích:
 	Đợi trang load.
 - Random: randint trong randoms, kết hợp với sleep trong time, tạo khoảng ngủ mô phỏng thời gian chờ như người thật.
+
