@@ -1,10 +1,10 @@
-									-------------------------------------------- -
-									- 				SELENIUM PROJECT			 -
-									- 											 -
-									- Made by: *Shan*.			 				 -
-									- **Email**: sontran.code@gmail.com.		 -
-									- **Protonmail**: jayce7g@protonmail.com.	 -
-									-------------------------------------------- -
+******************************************** -
+- 				SELENIUM PROJECT			 -
+- 											 -
+- **Made by**: *Shan*.			 			 -
+- **Email**: *sontran.code@gmail.com*.		 -
+- **Protonmail**: *jayce7g@protonmail.com*.	 -
+******************************************** -
 # Sử dụng chủ yếu cho mục đích đẩy dữ liệu từ excel lên trang web cá nhân.
 - Ở đây mình sử dụng database là sql server để lưu trữ các account đăng nhập. Các bạn có thể chỉnh sữa lại chúng ở phía dưới hàm main.
 
