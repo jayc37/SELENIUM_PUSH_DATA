@@ -5,19 +5,19 @@
 - **Protonmail**: *jayce7g@protonmail.com*.	 
 
 ----------------------------------------
-# Sử dụng chủ yếu cho mục đích đẩy dữ liệu từ excel lên trang web cá nhân.
+- *Sử dụng chủ yếu cho mục đích đẩy dữ liệu từ excel lên trang web cá nhân.*
 
 - Ở đây mình sử dụng database là sql server để lưu trữ các account đăng nhập. Các bạn có thể chỉnh sữa lại chúng ở phía dưới hàm main.
 
 - Một số chỉ dẫn cơ bản:
 - bước 1:  mở file SQL_server_connection. chỉnh sửa lại theo form:
-	- dòng 1:  ip server máy muốn kết nối đến.
-	- dòng 2: tên database mới tạo
-	- dòng 3: user name để đăng nhập đến sql
-	- dòng 4: password để đăng nhập đến sql
+  - dòng 1:  ip server máy muốn kết nối đến.
+  - dòng 2: tên database mới tạo
+  - dòng 3: user name để đăng nhập đến sql
+  - dòng 4: password để đăng nhập đến sql
 - bước 2: chạy file push.bat
 ----------------------------------------
-----------------------------------------
+
 # Sơ đồ thư mục:
 
 
@@ -41,6 +41,7 @@
   - *push.bat*
   ----------------------------------------
 **Library**: *Bs4,Selenium,Openpyxl,Re,String,Os,Socket,Sys,Codecs,Pyodbc,Logging,Argparse,Threading,Time,Random*
+
 ----------------------------------------
 - **Bs4**: BeautifulSoup crawl dữ liệu về.
 - **Selenium**: webdriver,Keys,By,Options,TimeoutException,WebDriverWait,ActionChains:	Tạo bot.
@@ -49,6 +50,8 @@
 	- **Options**: Tích hợp các tùy chọn cho browser mới khởi tạo.
 	- **ActionChains**: khởi tạo action thao tác với quyền cao.
 	- **WebDriverWait**: Sử dụng để chờ cho đến khi element được click.
+	
+---------------------------------------
 - **Openpyxl**: load_workbook,Workbook: Lib tạo kết nối từ python đến excel.
 - **datetime**: datetime,timedelta.
 - **webdriver_manager.chrome**: ChromeDriverManager.
@@ -62,6 +65,8 @@
 	- socket: bắt lỗi socket.error.
 - **Sys**: Dung ossys kill chrome.
 	- Kill browser hiện tại để khởi tạo lại browser mới khi trang bị đứng.
+
+	
 - **Codecs**
 - **Pyodbc**: 
 	- Kết nối python với SQL Server. Tạo truy vấn từ bề mặt py đến MSSQL.
